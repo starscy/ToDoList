@@ -1,0 +1,19 @@
+.button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.6;
+  }
+}
+.button_red {
+  background-color: red;
+}
+
+.button_orange {
+  background-color: orange;
+}
+
+.button_green {
+  background-color: green;
+}

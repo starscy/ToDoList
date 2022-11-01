@@ -1,0 +1,56 @@
+.todoList {
+  margin: 20px;
+  border: 1px solid black;
+  position: relative;
+}
+.todoTask {
+  margin: 20px;
+  padding: 10px 10px 10px 130px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  min-height: 100px;
+  &_active {
+    background-color: grey;
+  }
+  &__circle {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    position: absolute;
+    left: 25px;
+    border-radius: 50%;
+    &:hover {
+      cursor: pointer;
+    }
+    .complete {
+      position: relative;
+      top: 6px;
+      left: 5px;
+      &_deactive {
+        display: none;
+      }
+    }
+  }
+
+  &__text {
+    &_deactive {
+      h3,
+      span {
+        text-decoration: line-through;
+      }
+    }
+  }
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.attention {
+  &:hover {
+    opacity: 0.6;
+  }
+}

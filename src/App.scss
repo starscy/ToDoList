@@ -1,0 +1,44 @@
+.app {
+  background-color: chocolate;
+}
+.container {
+  width: 1280px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+.header {
+  text-align: center;
+}
+
+.taskCreatorSection {
+  border: 1px solid black;
+  padding: 10px 30px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  h2 {
+    text-align: center;
+    margin: 0;
+  }
+  .taskcreatorBlock {
+    display: flex;
+    justify-content: space-around;
+    &__name {
+      display: flex;
+      flex-direction: column;
+    }
+    &__description {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__btn {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
